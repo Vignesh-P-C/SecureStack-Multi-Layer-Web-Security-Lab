@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIT Security Authentication</title>
+  <link rel="icon" href="https://vtop.vit.ac.in/vtop/assets/img/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="navbar">
+    <div class="vit-logo">🎓</div>
+    <span class="vit-text">VIT</span>
+    <span class="campus-label">(Vellore Campus)</span>
+  </div>
+  <div class="container">
+    <div>
+      <div class="card">
+        <div class="card-header"><h1>VTOP Security Authentication</h1></div>
+        <div class="card-body">
+          <div class="levels">
+            <div id="p1" class="level-item active">Login</div>
+            <div id="p2" class="level-item">Pattern</div>
+            <div id="p3" class="level-item">Memory</div>
+            <div id="p4" class="level-item">Sequence</div>
+          </div>
+          <div class="attempts" id="attempts"></div>
+          <div class="current-level" id="currentLevel">Layer 1: Login Credentials</div>
+          <div id="messageBox" class="message-box"></div>
+          <div class="action-box">
+            <div id="layer1">
+              <div class="form-group">
+                <label class="form-label">Username</label>
+                <input type="text" class="form-control" id="user" placeholder="Enter username">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control" id="pass" placeholder="Enter password">
+              </div>
+            </div>
+            <div id="layer2" class="hidden">
+              <div class="pattern-display" id="pattern"></div>
+              <div class="form-group">
+                <label class="form-label">Your Answer</label>
+                <input type="text" class="form-control" id="patternInput" placeholder="Enter the next number">
+              </div>
+            </div>
+            <div id="layer3" class="hidden">
+              <div class="instruction-text">Memorize the highlighted cells, then click them</div>
+              <div class="memory-grid" id="grid"></div>
+            </div>
+            <div id="layer4" class="hidden">
+              <div class="instruction-text">Watch and repeat the color sequence</div>
+              <div class="sequence-display" id="sequenceDisplay"></div>
+              <div class="color-buttons hidden" id="colorButtons">
+                <div class="color-btn red" onclick="pickColor('red')"></div>
+                <div class="color-btn blue" onclick="pickColor('blue')"></div>
+                <div class="color-btn green" onclick="pickColor('green')"></div>
+                <div class="color-btn yellow" onclick="pickColor('yellow')"></div>
+              </div>
+              <div class="color-tray" id="tray"></div>
+            </div>
+            <div id="denied" class="hidden banner-message banner-denied">
+              <h2>🚫 ACCESS DENIED</h2>
+              <p>Too many failed attempts.</p>
+              <p style="font-size:13px">Runs left: <span id="resetsLeft"></span></p>
+            </div>
+            <div id="permanentLockout" class="hidden banner-message banner-lockout">
+              <h2>🔒 PERMANENT LOCKOUT</h2>
+              <p>Maximum runs exceeded.</p>
+            </div>
+            <div id="success" class="hidden banner-message banner-success">
+              <h2>✅ ACCESS GRANTED</h2>
+              <p>All layers verified!</p>
+            </div>
+          </div>
+          <button id="mainBtn" class="btn">Submit</button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="hint-box" id="hintBox">
+        <h3>💡 Hint</h3>
+        <div class="hint-content" id="hint">Username: admin<br>Password: admin</div>
+      </div>
+      <div class="audit-log">
+        <div class="audit-log-title">📋 Activity Log</div>
+        <div class="audit-log-content">
+          <ul id="log"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">© 2024 VIT Vellore | Secure Authentication System</div>
+  <script src="script.js"></script>
+</body>
+</html>
