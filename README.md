@@ -54,7 +54,7 @@ multi-layer-auth/
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR_USERNAME/multi-layer-auth.git
+git clone https://github.com/Vignesh-P-C/4-Layered-security-webApp.git
 cd multi-layer-auth
 
 # Just open in browser — no build step needed
