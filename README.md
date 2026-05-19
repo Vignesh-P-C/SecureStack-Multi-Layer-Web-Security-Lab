@@ -8,8 +8,7 @@ A browser-based security demo featuring **4 progressive authentication layers** 
 
 ## 🚀 Live Demo
 
-<!-- Add your GitHub Pages / Netlify / Vercel link here -->
-**[Try it live →](https://vignesh-p-c.github.io/SecureStack-Multi-Layer-Web-Security-Lab/)**  *(deploy on GitHub Pages for free — see below)*
+**Click here: [Try it live →](https://vignesh-p-c.github.io/SecureStack-Multi-Layer-Web-Security-Lab/)**  *(deployed on GitHub Pages for free)*
 
 ---
 
@@ -131,4 +130,4 @@ MIT — feel free to use, fork, and build on this.
 
 ---
 
-*Made by [Your Name](https://github.com/YOUR_USERNAME)*
+*Made by [Vignesh P C](https://github.com/Vignesh-P-C)*
