@@ -140,4 +140,4 @@ MIT — feel free to use, fork, and build on this.
 
 ---
 
-*Made by [Vignesh P C](https://github.com/Vignesh-P-C)*
+*Made by Vignesh P C — [![GitHub](screenshots/github.png)](https://github.com/Vignesh-P-C)*
