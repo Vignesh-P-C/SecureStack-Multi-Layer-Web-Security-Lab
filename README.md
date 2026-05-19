@@ -117,9 +117,20 @@ The activity log sidebar records every event with a timestamp so you can trace t
 ---
 
 ## 📸 Screenshots
-
+Login Screen:
 ![Login Screen](screenshots/login.png)
-<!-- ![Memory Grid](screenshots/memory-grid.png) -->
+
+Pattern security:
+![Pattern Security](screenshots/pattern.png)
+
+Memory Grid:
+![Memory Grid Security](screenshots/memorygrid.png)
+
+Colour Sequence:
+![Colour Sequence Security](screenshots/coloursequence.png)
+
+Successful Login:
+![Successful Login Security](screenshots/successfullogin.png)
 
 ---
 
