@@ -118,8 +118,7 @@ The activity log sidebar records every event with a timestamp so you can trace t
 
 ## 📸 Screenshots
 
-<!-- Add screenshots here once deployed. Use: -->
-<!-- ![Login Screen](screenshots/login.png) -->
+![Login Screen](screenshots/login.png)
 <!-- ![Memory Grid](screenshots/memory-grid.png) -->
 
 ---
